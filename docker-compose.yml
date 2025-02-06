@@ -1,0 +1,9 @@
+services:
+  python-bridge:
+    build:
+      context: ./DataInputSimulator
+      dockerfile: Dockerfile
+    container_name: DataInputSimulator
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: always
